@@ -7,17 +7,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class CuentaFragment extends Fragment implements FragmentsBaseInterface{
 
-    public static CharSequence TITLE = " CUENTA";
-    public static int ICON = R.drawable.cuenta_selector;
+public class EscolarFragment extends Fragment  implements  FragmentsBaseInterface{
 
-    public CuentaFragment() {
+    public static CharSequence TITLE = " Escolar";
+    public static int ICON = R.drawable.escolar_selector;
 
+    public EscolarFragment() {
+        // Required empty public constructor
     }
 
+
     @Override
-    public CharSequence getTitle() {return TITLE;}
+    public CharSequence getTitle() {
+        return TITLE;
+    }
 
     @Override
     public int getStateIcon() {
@@ -28,11 +32,7 @@ public class CuentaFragment extends Fragment implements FragmentsBaseInterface{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cuenta, container, false);
+        return inflater.inflate(R.layout.fragment_escolar, container, false);
     }
-
-
-
-
 
 }

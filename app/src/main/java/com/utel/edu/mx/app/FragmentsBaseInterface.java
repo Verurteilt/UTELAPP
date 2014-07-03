@@ -6,4 +6,6 @@ package com.utel.edu.mx.app;
 public interface FragmentsBaseInterface {
 
     public CharSequence getTitle();
+
+    public int getStateIcon();
 }
